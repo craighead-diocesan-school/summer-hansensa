@@ -1,6 +1,7 @@
-<h1>My Summer</h1>
 
 <body>
+  <a href="index.html">My Winter</a>
+  <h1>My Summer</h1>
   <header>
     <h2>Summer 2024/2025</h2>
     <p> Summer on an island </p>
@@ -17,10 +18,8 @@
   <main>
     <div>
       <img src="sunset.png">
-      <img scr="coconutdrink.png">
-      <img src="...">
-      <img src="...">
-      <img src="..."></img>
+      <img src="Screenshot 2025-02-28 101656.png">
+      <img src="Screenshot 2025-02-28 095701.png">
     </div>
   </main>
 
@@ -33,24 +32,24 @@
 <style>
   body {
     display: grid;
-    grid: "s s s" auto " h    m    .  " auto " l    m    .  " auto " a   m    f  " auto / auto auto auto;
+    grid: "s s s" auto " h    h    ." auto " l    m    .  " auto " a   m    f  " auto / auto auto auto;
   }
 
   h1 {
     grid-area: s;
   }
-
+a{ grid-area: h;}
   header {
     grid-area: h;
   }
 
   main {
-    grid-area: m;
+    grid-area: l;
   }
 
   div {
     display: flex;
-    flex-direction: column;
+    flex-direction: horlzontal;
   }
 
   footer {
@@ -77,10 +76,12 @@
 
   img {
     border-radius: 50%;
-    filter: grayscale(20%);
+    filter: grayscale(40%);
     filter: sepia(20%);
+    height: 10rem;
   }
-
+div{ justify-content: center;
+  justify-content: space-around;}
   li4 {
     text-decoration: line-through;
   }
