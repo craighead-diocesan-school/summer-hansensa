@@ -2,15 +2,6 @@
 
 <body>
   <header>
-    <div>
-      <img src="sunset.png">
-      <img scr="coconutdrink.png"></img>
-    </div>
-
-  </header>
-
-  <main>
-
     <h2>Summer 2024/2025</h2>
     <p> Summer on an island </p>
     <h2> What I did:</h2>
@@ -21,7 +12,18 @@
       <li>Relax</li>
       <li4>R</li4>
     </ul>
+
+  </header>
+  <main>
+    <div>
+      <img src="sunset.png">
+      <img scr="coconutdrink.png">
+      <img src="...">
+      <img src="...">
+      <img src="..."></img>
+    </div>
   </main>
+
 
   <footer>
     <p> &copy; Samantha Hansen, Craighead Diocesan School, 2025</p>
@@ -39,15 +41,16 @@
   }
 
   header {
-    grid-area: m;
+    grid-area: h;
   }
 
   main {
-    grid-area: l;
+    grid-area: m;
   }
 
   div {
     display: flex;
+    flex-direction: column;
   }
 
   footer {
