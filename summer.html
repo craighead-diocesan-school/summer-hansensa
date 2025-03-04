@@ -1,7 +1,9 @@
-
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet"></head> 
 <body>
-  <nav><a href="index.html">My Winter</a>
-  <h1>My Summer</h1></nav>
+  <nav><h1>My Summer</h1>
+    <a href="index.html">My Winter</a>
   </nav>
   <header>
     <h2>Summer 2024/2025</h2>
@@ -30,31 +32,35 @@
 </body>
 
 <style>
+ 
   body {
-    display: grid;
-    grid: "s s s" auto " h    h    ." auto " l    m    .  " auto " a   m    f  " auto / auto auto auto;
-  }
-
-  h1 {
-    grid-area: s;
-  }
-a{ grid-area: s;
+        display: grid;
+        grid: "n n n" auto 
+              "h h m" auto 
+              "h h m" auto 
+              "f . m" auto
+            / auto auto auto;
+    }
+   h1 {
+  font-family: "Dangrek", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
   header {
     grid-area: h;
   }
-nav{grid-area: s;}
+nav{grid-area: n;}
   main {
-    grid-area: l;
+    grid-area: m;
   }
 
   div {
     display: flex;
-    flex-direction: horlzontal;
+    flex-direction: column;
   }
 
   footer {
-    grid-area: a;
+    grid-area: f;
   }
 </style>
 <style>
@@ -89,16 +95,18 @@ nav{grid-area: s;}
     filter: grayscale(40%);
     filter: sepia(20%);
     height: 10rem;
+  width: 15rem;
+    margin: 2px;
   }
 div{ justify-content: center;
   justify-content: space-around;}
-  li4 {
-    text-decoration: line-through;
-  }
+ 
 
   h1:hover {
     background: rgb(255, 148, 148);
   }
+
+
 
   p {
     margin-left: 7%;
