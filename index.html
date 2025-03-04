@@ -1,9 +1,9 @@
 <body>
     <nav><a href="summer.html">My Summer</a>
-        
-    </nav>
+    <h1>My Winter</h1>
+</nav>
     <header>
-        <h1>My Winter</h1>
+        
         <h2>Winter 2024</h2>
         <p> Winter in the snow </p>
         <h2> What I did:</h2>
@@ -59,9 +59,9 @@
     body {
         display: grid;
         grid: "n n n" auto 
-              "h . d" auto 
-              ". d d" auto 
-              "f . ." auto
+              "h h m" auto 
+              "h h m" auto 
+              "f . m" auto
             / auto auto auto;
     }
 
@@ -79,10 +79,12 @@
 
     div {
         display: flex;
-        flex-direction: colum;
-        grid-area: d;
+        flex-direction: column;
+        
     }
+ div{grid-area: d;
 
+ }
     footer {
         grid-area: f;
     }
@@ -91,6 +93,7 @@
         border-radius: 30%;
         filter: grayscale(40%);
         filter: sepia(20%);
-        height: 5rem;
+        height: 7rem;
+        gap: 50px;;
     }
 </style>
